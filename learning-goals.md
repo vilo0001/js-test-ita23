@@ -1,0 +1,53 @@
+- Programming basics: Variables, types, operators
+  - Hello world in javascript
+      - `console.log`
+  - Variables
+      - `const`, `let`
+      - Assignment, reassignment
+      - Giving variable names
+  - Comments
+  - Errors
+  - Types
+      - `number`
+      - `string`
+      - `boolean`
+      - `typeof`
+  - Operators
+      - Arithmetic operators
+          - Addition `+`
+          - Subtraction `-`
+          - Multiplication `*`
+          - Division `/`
+- Loops and conditional
+  - Operators
+      - Equality operator
+      - Relational operator
+      - Logical operator
+  - Conditional
+      - If, else, else if sentence
+  - Loops
+      - Forloop
+- Arrays
+  - Using arrays to structure multiple data elements
+      - Arrays as an index-based data structure
+      - Basic array methods e.g: push, length, indexOf
+  - Iterating through an array
+  - Using conditional logic on each data element from an array
+- Functions
+  -  Calling functions (using them)
+      - No arguments
+      - With arguments
+  -  Creating function
+      - No parameters
+          - Function body
+      - Parameters
+      - Arguments vs parameters
+          - Parameter placeholder value
+      - Return value
+          - Capturing return
+  -  Scope
+- Objects
+  - What is an object
+  - Accessing data using a key
+  - Changing data using a key
+  - Array of objects
