@@ -7,7 +7,7 @@ bruge hjælpemidler dog ikke ChatGPT
 
 Først `Fork` projektet, så du får testen over på din egen githubkonto.
 Du burde se et link der bruger dit brugernavn istedet for
-mig `https://github.com/DIT_BRUGERNAVN/js-test-ita23`
+mit `https://github.com/DIT_BRUGERNAVN/js-test-ita23`
 
 I skal skrive kode inde i `src` mappen. Der ligger en javascript fil
 for hver emne. Inde i emnerne er der en funktion som i skal afslutte.
