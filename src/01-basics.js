@@ -10,7 +10,7 @@
  * const anotherResult = add(-1, 1); // anotherResult will be 0
  */
 function add(a, b) {
-    return a + b;
+    
 }
 
 /**
@@ -23,7 +23,7 @@ function add(a, b) {
  * const result = determineType("Hello"); // result will be "string"
  * const anotherResult = determineType(42); // anotherResult will be "number"
  */
-function determineType() {
+function determineType(value) {
 
 }
 
@@ -38,7 +38,7 @@ function determineType() {
  * const result = concatenateStrings("Hello", "World"); // result will be "Hello World"
  */
 
-function concatenateStrings(a, b) {
+function concatenateStringsWithSpace(a, b) {
 
 }
 

@@ -51,3 +51,9 @@
   - Accessing data using a key
   - Changing data using a key
   - Array of objects
+- DOM
+  - Define what the DOM is and what it does
+  - Use query selectors to retrieve elements from the DOM
+  - Use event listeners to respond to events that happen on the DOM
+  - Create DOM elements using JavaScript and add them to the DOM
+  - Manipulate DOM elements using JavaScript to change their properties

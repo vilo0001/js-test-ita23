@@ -8,7 +8,7 @@
  * // numbers will be [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
  */
 function returnNumbers(array) {
-    return [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    
 }
 
 /**

@@ -9,7 +9,7 @@
  * const anotherResult = isEven(7); // anotherResult will be false
  */
 
-function isEven() {
+function isEven(number) {
 
 }
 
