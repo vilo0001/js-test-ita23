@@ -14,6 +14,8 @@ for hver emne. Inde i emnerne er der en funktion som i skal afslutte.
 I kan se hvad funktionen skal gøre i kommentaren. Der står både
 parametre, men også hvordan funktionen skal bruges
 
+I `04-function.js` skal i også selv skrive funktionen
+
 ## Køre testen
 
 For at køre testen skal i åbne `index.html`
