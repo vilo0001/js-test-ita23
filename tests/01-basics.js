@@ -1,7 +1,7 @@
 function testBasics() {
     describe('01-basics - getCoolestTeacher', () => {
 
-        it('should return 5 when provided with 2 and 3', () => {
+        it('should return the coolest teacher', () => {
             expect(getCoolestTeacher()).toBe("Benjamin");
         });
     });

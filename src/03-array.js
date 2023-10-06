@@ -45,5 +45,5 @@ function sumArray(array) {
  * const updatedArray = pushElement(myArray, 4); // updatedArray will be [1, 2, 3, 4]
  */
 function pushElement(arr, elem) {
-
+    
 }

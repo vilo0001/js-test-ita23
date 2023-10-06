@@ -10,15 +10,15 @@
  */
 
 function isEven(number) {
-
+    
 }
 
 /**
  * This function checks if a number is within a range.
  *
  * @param {number} n - The number to check.
- * @param {number} min - The minimum range.
- * @param {number} max - The maximum range.
+ * @param {number} min - The minimum range (included)
+ * @param {number} max - The maximum range (included)
  * @returns {boolean} - True if the number is within range, false otherwise.
  *
  * Usage:

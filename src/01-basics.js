@@ -71,6 +71,6 @@ function concatenateStringsWithSpace(a, b) {
  */
 
 function toUpperCaseWithSmiley(str) {
-
+    
 }
 
