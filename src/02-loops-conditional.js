@@ -30,19 +30,23 @@ function isWithinRange(n, min, max) {
 
 }
 
-
-
 /**
- * This function reverses a string.
+ * This function checks if a string contains the string "ba"
  *
- * @param {string} str - The string to be reversed.
- * @returns {string} - The reversed string.
+ * @param {string} string - The string to check.
+ * @returns {boolean} - True if the string contains the string ba
  *
  * Usage:
- * const reversed = reverseString('hello'); // reversed will be 'olleh'
- * const anotherReversed = reverseString('world'); // anotherReversed will be 'dlrow'
+ * const bananaContainsBa = stringContainsBa("banana"); // true
+ * const harborContainsBa = isWithinRange("harbor"); // false
+ * const harborContainsBa = isWithinRange("habanana"); // true
  */
 
-function reverseString(str) {
+function stringContainsBa(string) {
 
 }
+
+
+
+
+

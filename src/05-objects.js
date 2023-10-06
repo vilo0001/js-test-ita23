@@ -36,27 +36,13 @@ function getPersonName(person) {
  *
  * Usage:
  * const john = findPersonByName([{ name: 'John Doe', age: 30 }, { name: 'Jane Doe', age: 25 }], 'John Doe');
- * // john will be { name: 'John Doe', age: 30 }
+ * console.log(john); // Outputs { name: 'John Doe', age: 30 }
+ *
  */
 function findPersonByName(persons, name) {
 
 }
 
-
-/**
- * This function adds a property 'country' to the person object.
- *
- * @param {Object} person - The person object.
- * @param {string} country - The country where the person resides.
- * @returns {Object} - The updated person object with a 'country' property.
- *
- * Usage:
- * const updatedPerson = addCountryToPerson({ name: 'John Doe', age: 30, city: 'New York' }, 'USA');
- * // updatedPerson will be { name: 'John Doe', age: 30, city: 'New York', country: 'USA' }
- */
-function addCountryToPerson(person, country) {
-
-}
 
 /**
  * This function calculates the total age of all persons in an array.

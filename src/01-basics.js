@@ -1,16 +1,30 @@
 /**
- * This function adds two numbers.
+ * This function returns the name of the coolest teacher
  *
- * @param {number} a - The first number to be added.
- * @param {number} b - The second number to be added.
- * @returns {number} - The sum of the two numbers.
+ * @returns {string} - The string "Benjamin"
  *
  * Usage:
- * const result = add(2, 3); // result will be 5
- * const anotherResult = add(-1, 1); // anotherResult will be 0
+ * const coolestTeacher = getCoolestTeacher();
+ * console.log(coolestTeacher); // Benjamin
  */
-function add(a, b) {
-    
+function getCoolestTeacher() {
+
+}
+
+/**
+ * This function multiplies two numbers and then adds a third number.
+ *
+ * @param {number} a - The first number.
+ * @param {number} b - The second number.
+ * @param {number} c - The third number.
+ * @returns {number} - The result of (a * b) + c.
+ *
+ * Usage:
+ * const result = multiplyAndAdd(2, 3, 1); // result will be 7
+ * const anotherResult = multiplyAndAdd(-1, 1, 2); // anotherResult will be 1
+ */
+function multiplyAndAdd(a, b, c) {
+
 }
 
 /**
@@ -35,10 +49,28 @@ function determineType(value) {
  * @returns {string} - The concatenated string.
  *
  * Usage:
- * const result = concatenateStrings("Hello", "World"); // result will be "Hello World"
+ * const result = concatenateStringsWithSpace("Hello", "World"); // result will be "Hello World"
  */
 
 function concatenateStringsWithSpace(a, b) {
+
+}
+
+
+/**
+ * This function converts a string to uppercase and adds a smiley at the end of the string
+ *
+ * @param {string} str - The string to be converted.
+ * @returns {string} - The string in uppercase.
+ *
+ * Usage:
+ * const upper = toUpperCaseWithSmiley('hello');
+ * console.log(upper); // upper will be 'HELLO:)'
+ * const anotherUpper = toUpperCaseWithSmiley('world');
+ * console.log(anotherUpper); // upper will be 'WORLD:)'
+ */
+
+function toUpperCaseWithSmiley(str) {
 
 }
 

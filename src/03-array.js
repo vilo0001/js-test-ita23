@@ -1,15 +1,22 @@
 /**
- * This function returns an array of numbers from 1 to 10.
+ * This function returns an array of numbers from the specified start to finish counting up
  *
- * @returns {Array<number>} - An array containing numbers from 1 to 10.
+ * @param {number} start - The starting number of the range (inclusive).
+ * @param {number} finish - The ending number of the range (inclusive).
+ * @returns {Array<number>} - An array containing numbers from start to finish.
  *
  * Usage:
- * const numbers = returnNumbers();
- * // numbers will be [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+ * const numbers = returnNumbers(2, 7);
+ * console.log(numbers); // [2, 3, 4, 5, 6, 7]
+ * const numbers = returnNumbers(10, 11);
+ * console.log(numbers); // [10, 11]
+ * const numbers = returnNumbers(5, 5);
+ * console.log(numbers); // [5]
  */
-function returnNumbers(array) {
-    
+function returnNumbers(start, finish) {
+
 }
+
 
 /**
  * This function sums up all the values in an array.

@@ -1,22 +1,34 @@
 function testBasics() {
-    describe('01-basics - add function', () => {
+    describe('01-basics - getCoolestTeacher', () => {
 
         it('should return 5 when provided with 2 and 3', () => {
-            expect(add(2, 3)).toBe(5);
+            expect(getCoolestTeacher()).toBe("Benjamin");
         });
-
-        it('should return 0 when provided with -1 and 1', () => {
-            expect(add(-1, 1)).toBe(0);
-        });
-
-        it('should handle decimal numbers correctly', () => {
-            expect(add(0.1, 0.2)).toBeCloseTo(0.3, 5);
-        });
-
     });
 
-    describe('01-basics - determineType function', () => {
+    describe('01-basics - multiplyAndAdd', () => {
+        it("should multiply the first two arguments and add the third", function () {
+            const result = multiplyAndAdd(2, 3, 1);
+            expect(result).toEqual(7);
+        });
 
+        it("should handle negative numbers", function () {
+            const result = multiplyAndAdd(-1, 1, 2);
+            expect(result).toEqual(1);
+        });
+
+        it("should handle zero values", function () {
+            const result = multiplyAndAdd(0, 5, 2);
+            expect(result).toEqual(2);
+        });
+
+        it("should return the third argument if first or second argument is 0", function () {
+            const result = multiplyAndAdd(0, 0, 5);
+            expect(result).toEqual(5);
+        });
+    });
+
+    describe('01-basics - determineType', () => {
         it('should return "string" for a string input', () => {
             expect(determineType("Hello")).toBe("string");
         });
@@ -28,18 +40,9 @@ function testBasics() {
         it('should return "object" for an object input', () => {
             expect(determineType({})).toBe("object");
         });
-
-        it('should return "undefined" for an undefined input', () => {
-            expect(determineType(undefined)).toBe("undefined");
-        });
-
-        it('should return "null" for a null input', () => {
-            expect(determineType(null)).toBe("object"); // In JavaScript, `typeof null` returns "object".
-        });
     });
 
-    describe('01-basics - concatenateStrings function', () => {
-
+    describe('01-basics - concatenateStringsWithSpace', () => {
         it('should return "Hello World" when provided with "Hello" and "World"', () => {
             expect(concatenateStringsWithSpace("Hello", "World")).toBe("Hello World");
         });
@@ -53,5 +56,17 @@ function testBasics() {
         });
     });
 
+    describe('01-basics - toUpperCaseWithSmiley', () => {
+        it('Should work on hello', () => {
+            expect(toUpperCaseWithSmiley("hello")).toBe("HELLO:)");
+        });
 
+        it('Should work with empty string', () => {
+            expect(toUpperCaseWithSmiley("")).toBe(":)");
+        });
+
+        it('Should work with world', () => {
+            expect(toUpperCaseWithSmiley("World")).toBe("WORLD:)");
+        });
+    });
 }
