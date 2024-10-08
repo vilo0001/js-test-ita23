@@ -70,5 +70,89 @@ function testObjects() {
         });
     });
 
+    describe("05-objects - checkForDuplicateEmails", function () {
+        it("should return true when duplicate emails are present", function () {
+            const users = [
+                {email: 'alice@example.com'},
+                {email: 'bob@example.com'},
+                {email: 'alice@example.com'}
+            ];
+            expect(checkForDuplicateEmails(users)).toBe(true);
+        });
+
+        it("should return false when all emails are unique", function () {
+            const users = [
+                {email: 'alice@example.com'},
+                {email: 'bob@example.com'},
+                {email: 'charlie@example.com'}
+            ];
+            expect(checkForDuplicateEmails(users)).toBe(false);
+        });
+
+        it("should handle an empty array and return false", function () {
+            const users = [];
+            expect(checkForDuplicateEmails(users)).toBe(false);
+        });
+
+        it("should handle an array with a single user and return false", function () {
+            const users = [
+                {email: 'alice@example.com'}
+            ];
+            expect(checkForDuplicateEmails(users)).toBe(false);
+        });
+
+        it("should consider emails different if they are actually different", function () {
+            const users = [
+                {email: 'user@example.com'},
+                {email: 'user@example.co.uk'}
+            ];
+            expect(checkForDuplicateEmails(users)).toBe(false);
+        });
+
+        it("should handle emails with sub-addressing (plus addressing)", function () {
+            const users = [
+                {email: 'user+label@example.com'},
+                {email: 'user@example.com'}
+            ];
+            expect(checkForDuplicateEmails(users)).toBe(false);
+        });
+
+        it("should handle emails with dots in the local part", function () {
+            const users = [
+                {email: 'user.name@example.com'},
+                {email: 'username@example.com'}
+            ];
+            expect(checkForDuplicateEmails(users)).toBe(false);
+        });
+
+        it("should handle multiple duplicates", function () {
+            const users = [
+                {email: 'alice@example.com'},
+                {email: 'bob@example.com'},
+                {email: 'charlie@example.com'},
+                {email: 'alice@example.com'},
+                {email: 'bob@example.com'}
+            ];
+            expect(checkForDuplicateEmails(users)).toBe(true);
+        });
+
+        it("should handle emails with special characters", function () {
+            const users = [
+                {email: 'user.name+label@example.com'},
+                {email: 'user_name@example.com'},
+                {email: 'user-name@example.com'},
+                {email: 'user.name+label@example.com'} // Duplicate
+            ];
+            expect(checkForDuplicateEmails(users)).toBe(true);
+        });
+
+        it("should treat emails with different subdomains as different", function () {
+            const users = [
+                {email: 'user@example.com'},
+                {email: 'user@sub.example.com'}
+            ];
+            expect(checkForDuplicateEmails(users)).toBe(false);
+        });
+    });
 
 }

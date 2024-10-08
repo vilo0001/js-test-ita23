@@ -10,7 +10,7 @@
  */
 
 function isEven(number) {
-    
+
 }
 
 /**
@@ -45,6 +45,22 @@ function isWithinRange(n, min, max) {
 function stringContainsBa(string) {
 
 }
+
+
+/**
+ * This function calculates the sum of each digit raised to its position.
+ *
+ * @param {number} num - The number to process.
+ * @returns {number} - The calculated sum.
+ *
+ * Usage:
+ * const result = sumOfDigitsWithPosition(1234); // result will be 1^1 + 2^2 + 3^3 + 4^4 = (1) + (2 * 2) + (3 * 3 * 3) + (4 * 4 * 4 * 4) =  1 + 4 + 27 + 256 = 288
+ * const result = sumOfDigitsWithPosition(52); // result will be 5^1 + 2^2 = 5 + (2 * 2) = 5 + 4 = 9
+ */
+function sumOfDigitsWithPosition(num) {
+
+}
+
 
 
 

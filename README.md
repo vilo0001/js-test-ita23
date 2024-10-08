@@ -28,3 +28,9 @@ overblik over hvilke i har bestået og hvilke i stadig mangler.
 Når du er færdig med testen skal du committe og push og derefter blot
 aflevere github linket til
 testen `https://github.com/DIT_BRUGERNAVN/js-test-ita23`
+
+## Bagefter testen
+
+- Den var ALT for nem. Den skal virkelig op i sværhedsgard til sidst
+- Opgaverne tror jeg er lidt for googleable. Lav dem lidt mere unikke
+  næste gang

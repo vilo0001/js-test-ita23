@@ -69,4 +69,30 @@ function testBasics() {
             expect(toUpperCaseWithSmiley("World")).toBe("WORLD:)");
         });
     });
+
+    describe("01-basics - repeatString", function () {
+        it("should repeat the string the specified number of times with spaces", function () {
+            expect(repeatString("Hello", 3)).toBe("Hello Hello Hello");
+            expect(repeatString("Goodbye", 2)).toBe("Goodbye Goodbye");
+        });
+
+        it("should handle repeating the string once", function () {
+            expect(repeatString("Test", 1)).toBe("Test");
+        });
+
+        it("should return an empty string when times is zero or negative", function () {
+            expect(repeatString("Hello", 0)).toBe("");
+            expect(repeatString("Hello", -1)).toBe("");
+        });
+
+        it("should handle empty string input", function () {
+            expect(repeatString("", 3)).toBe("  "); // Returns spaces between empty strings
+        });
+
+        it("should not add extra spaces at the end", function () {
+            const result = repeatString("Hello", 3);
+            expect(result.endsWith(" ")).toBe(false);
+        });
+    });
+
 }

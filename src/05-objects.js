@@ -8,7 +8,7 @@
  * // person might be { name: 'John Doe', age: 30, city: 'New York' }
  */
 function createPersonObject() {
-    
+
 }
 
 
@@ -55,5 +55,24 @@ function findPersonByName(persons, name) {
  * // totalAge will be 55
  */
 function getTotalAge(persons) {
+
+}
+
+
+/**
+ * This function checks for duplicate email addresses in an array of users.
+ *
+ * @param {Object[]} users - An array of user objects with an email property.
+ * @returns {boolean} - True if duplicate emails are found, otherwise false.
+ *
+ * Usage:
+ * const users = [
+ *   { email: 'alice@example.com' },
+ *   { email: 'bob@example.com' },
+ *   { email: 'alice@example.com' }
+ * ];
+ * const hasDuplicates = checkForDuplicateEmails(users); // true
+ */
+function checkForDuplicateEmails(users) {
 
 }

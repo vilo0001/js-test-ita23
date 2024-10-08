@@ -8,7 +8,7 @@
  * console.log(coolestTeacher); // Benjamin
  */
 function getCoolestTeacher() {
-
+    
 }
 
 /**
@@ -71,6 +71,21 @@ function concatenateStringsWithSpace(a, b) {
  */
 
 function toUpperCaseWithSmiley(str) {
-    
+
+}
+
+/**
+ * This function repeats a string a specified number of times with spaces in between.
+ *
+ * @param {string} str - The string to repeat.
+ * @param {number} times - The number of times to repeat the string.
+ * @returns {string} - The repeated string with spaces in between.
+ *
+ * Usage:
+ * const repeated = repeatString("Hello", 3); // repeated will be "Hello Hello Hello"
+ * const anotherRepeated = repeatString("Goodbye", 2); // anotherRepeated will be "Goodbye Goodbye"
+ */
+function repeatString(str, times) {
+
 }
 

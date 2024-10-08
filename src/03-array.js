@@ -45,5 +45,21 @@ function sumArray(array) {
  * const updatedArray = pushElement(myArray, 4); // updatedArray will be [1, 2, 3, 4]
  */
 function pushElement(arr, elem) {
-    
+
+}
+
+
+/**
+ * This function removes all instances of a specific value from an array.
+ *
+ * @param {number[]} array - An array of numbers.
+ * @param {number} valueToRemove - The value to remove from the array.
+ * @returns {number[]} - A new array with all instances of the value removed.
+ *
+ * Usage:
+ * const numbers = [1, 2, 3, 2, 4, 2, 5];
+ * const filtered = removeValue(numbers, 2); // filtered will be [1, 3, 4, 5]
+ */
+function removeValue(array, valueToRemove) {
+
 }
