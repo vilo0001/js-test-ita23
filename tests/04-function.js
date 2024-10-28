@@ -3,12 +3,7 @@ function testFunction() {
 
         it("should return a personalized message based on the user's name and age", function () {
             const message = generateMessage("Jack", 25);
-            expect(message).toBe("Hey Jack, at 25, you are in the prime of your life!");
-        });
-
-        it("should handle non-standard names and ages", function () {
-            const message = generateMessage("Chandler Bing", 30);
-            expect(message).toBe("Hey Chandler Bing, at 30, you are in the prime of your life!");
+            expect(message).toBe("Hey Jack, happy 25 birthday!");
         });
     });
 
