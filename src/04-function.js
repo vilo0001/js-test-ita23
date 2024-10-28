@@ -1,12 +1,12 @@
 /**
- * This function generates a personalized message based on the user's name and age.
+ * This function generates a birthday message based on the user's name and age.
  *
  * @param {string} name - Name of the user.
  * @param {number} age - Age of the user.
- * @returns {string} - Personalized message for the user.
+ * @returns {string} - Message for the user in this format: Hey NAME, happy YEAR birthday!
  *
  * Usage:
- * const message = generateMessage("Jack", 25); // message will be "Hey Jack, at 25, you are in the prime of your life!"
+ * const message = generateMessage("Jack", 25); // "Hey Jack, happy 25 birthday!"
  */
 function generateMessage(name, age) {
 
