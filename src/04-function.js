@@ -63,7 +63,7 @@ function generateAcronym(sentence) {
  *
  * Usage:
  * const consonantCount = countConsonantsWeighted("Hello World!"); // consonantCount will be 9
- * const anotherCount = countConsonantsWeighted("JavaScript"); // anotherCount will be 16
+ * const anotherCount = countConsonantsWeighted("JavaScript"); // anotherCount will be 9
  */
 function countConsonantsWeighted(str) {
 
