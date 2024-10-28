@@ -38,8 +38,8 @@ function isWithinRange(n, min, max) {
  *
  * Usage:
  * const bananaContainsBa = stringContainsBa("banana"); // true
- * const harborContainsBa = isWithinRange("harbor"); // false
- * const harborContainsBa = isWithinRange("habanana"); // true
+ * const harborContainsBa = stringContainsBa("harbor"); // false
+ * const harborContainsBa = stringContainsBa("habanana"); // true
  */
 
 function stringContainsBa(string) {
