@@ -10,7 +10,7 @@
  */
 
 function isEven(number) {
-
+    return number % 2 === 0;
 }
 
 /**
@@ -27,7 +27,7 @@ function isEven(number) {
  */
 
 function isWithinRange(n, min, max) {
-
+    return n >= min && n <= max;
 }
 
 /**
@@ -43,7 +43,7 @@ function isWithinRange(n, min, max) {
  */
 
 function stringContainsBa(string) {
-
+    return string.includes("ba");
 }
 
 
@@ -58,10 +58,13 @@ function stringContainsBa(string) {
  * const result = sumOfDigitsWithPosition(52); // result will be 5^1 + 2^2 = 5 + (2 * 2) = 5 + 4 = 9
  */
 function sumOfDigitsWithPosition(num) {
-
+    const numAsString = num.toString();
+    let sum = 0;
+    for (let i=0; i<numAsString.length; i++) {
+        sum += Math.pow(Number(numAsString[i]),i+1);
+    }
+    return sum;
 }
-
-
 
 
 
